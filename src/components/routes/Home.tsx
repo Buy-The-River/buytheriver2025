@@ -1,10 +1,8 @@
 import { Button } from "@chakra-ui/react";
 import { useNavigate } from "react-router-dom";
-import { FaMicrochip } from "react-icons/fa6";
-import { FaDiagramProject } from "react-icons/fa6";
-import { MdInsights } from "react-icons/md";
 import { motion } from "framer-motion";
 import NavBar from "../NavBar";
+import Footer from "../Footer";
 
 function Home() {
   const navigate = useNavigate();
@@ -107,6 +105,7 @@ function Home() {
           </a>
         </Button>
       </div>
+      <Footer />
     </>
   );
 }
