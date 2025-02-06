@@ -1,21 +1,21 @@
-import { FaInstagramSquare } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa6";
 
 function Footer() {
   return (
-    <div className=" flex flex-col sm:flex-row">
-      <ul className="flex flex-row">
-        <li className="text-4xl">
-          <a href="https://www.instagram.com/buytherivertrent/" target="_blank">
-            <FaInstagramSquare />
-          </a>
-        </li>
-        <li className="text-4xl">
+    <div className="bg-[#004aad]  text-white flex flex-col justify-center items-center !py-10 !pb-15">
+      <ul className="flex gap-3.5 flex-row !py-6">
+        <li className="!text-3xl">
           <a
             href="https://www.linkedin.com/company/buy-the-river/"
             target="_blank"
           >
-            <FaLinkedin />
+            <FaLinkedinIn />
+          </a>
+        </li>
+        <li className="!text-3xl">
+          <a href="https://www.instagram.com/buytherivertrent/" target="_blank">
+            <FaInstagram />
           </a>
         </li>
       </ul>
