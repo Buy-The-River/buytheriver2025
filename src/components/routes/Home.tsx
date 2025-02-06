@@ -3,6 +3,8 @@ import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import NavBar from "../NavBar";
 import Footer from "../Footer";
+import LogoText from "../../../src/assets/Logotxt.svg";
+import Logo from "../../../src/assets/Logo.svg";
 
 function Home() {
   const navigate = useNavigate();
@@ -15,7 +17,10 @@ function Home() {
     <>
       <NavBar />
       {/* Landing Page of Buy the River */}
-      <div className="home-section bg-blue-800 text-white h-[100vh] flex flex-col items-center justify-center bg-circle">
+      <div
+        id="home"
+        className="home-section bg-blue-800 text-white h-[100vh] flex flex-col items-center justify-center bg-circle"
+      >
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
@@ -29,7 +34,18 @@ function Home() {
         >
           <div className="text-6xl lg:text-[4.5rem] xl:text-8xl font-semibold sm:max-w-[50vw] px-4 leading-[4rem] pb-12 text-center ">
             <p>In-Person | 100+ Participants | March 1st, 2025</p>
-            <h2>Buy The River Logo</h2>
+            <div className="flex flex-row justify-between items-center">
+              <img
+                src={Logo}
+                alt="logo"
+                className=" max-h-[10rem] sm:max-w-[20rem] sm:max-h-[15rem]"
+              />
+              <img
+                src={LogoText}
+                alt="logo"
+                className=" max-h-[10rem] sm:max-w-[20rem] sm:max-h-[15rem]"
+              />
+            </div>
           </div>
           <Button
             size="xl"
@@ -42,7 +58,10 @@ function Home() {
         </motion.div>
       </div>
       {/* About Us Section */}
-      <div className="about-section bg-white sm:h-[40vh] text-black flex flex-col justify-center sm:flex-row p-6 ">
+      <div
+        id="about"
+        className="about-section bg-white sm:h-[40vh] text-black flex flex-col justify-center sm:flex-row p-6 "
+      >
         <div className=" h-[50%] pt-4 sm:h-[100%] text-center flex flex-col items-center justify-center text-4xl sm:text-6xl font-semibold px-2 ">
           <h3>About</h3>
           <h3>Us</h3>
@@ -74,7 +93,10 @@ function Home() {
         </div>
       </div>
       {/* What we Offer */}
-      <div className="offer-section bg-[#004aad] flex flex-col items-center pt-[3rem] sm:flex-none  sm:pb-4">
+      <div
+        id="offer"
+        className="offer-section bg-[#004aad] flex flex-col items-center pt-[3rem] sm:flex-none  sm:pb-4"
+      >
         <div className="w-[50%] h-full">
           <h3>What We Offer</h3>
           <h3>Trent University’s first-of-its-kind finance case competition</h3>
@@ -84,12 +106,18 @@ function Home() {
         </div>
       </div>
       {/* Sponsor Buy the river */}
-      <div className="sponsor-section bg-white min-h-[50vh] text-black flex flex-col sm:flex-row justify-evenly items-center">
+      <div
+        id="sponsors"
+        className="sponsor-section bg-white min-h-[50vh] text-black flex flex-col sm:flex-row justify-evenly items-center"
+      >
         <h3>Sponsors for Buy the River</h3>
         <h3>2025 Coming Soon...</h3>
       </div>
       {/* CONTACT US SECTION */}
-      <div className="contact-section bg-blue-800 text-center flex flex-col items-center justify-center py-12 px-4">
+      <div
+        id="contact"
+        className="contact-section bg-blue-800 text-center flex flex-col items-center justify-center py-12 px-4"
+      >
         <h3 className="mb-4 text-5xl mt-10 font-semibold">Contact Us</h3>
         <p className="text-lg ">
           Our Address 1600 W Bank Dr, Peterborough, ON K9L 0G2 Our Email
