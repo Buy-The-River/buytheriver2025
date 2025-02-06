@@ -18,25 +18,28 @@ const LandingSection = () => {
         transition={{ duration: 1, ease: "easeOut" }}
         className="flex flex-col items-center"
       >
-        <div className="text-6xl lg:text-[4.5rem] xl:text-8xl font-semibold sm:max-w-[50vw] px-4 leading-[4rem] pb-12 text-center">
-          <p>In-Person | 100+ Participants | March 1st, 2025</p>
-          <div className="flex flex-row justify-between items-center">
+        <div className="text-6xl lg:text-[4.5rem] xl:text-8xl font-semibold sm:max-w-[50vw] leading-[4rem] pb-12 text-center">
+          <p className="!my-3 weight-900">
+            In-Person | 100+ Participants | March 1st, 2025
+          </p>
+          <div className="!my-5 flex flex-row justify-between items-center">
             <img
               src={Logo}
               alt="logo"
-              className="max-h-[10rem] sm:max-w-[20rem] sm:max-h-[15rem]"
+              className="!mx-3 max-h-[60rem] sm:max-w-[120rem] sm:max-h-[80rem]"
             />
             <img
               src={LogoText}
               alt="logo"
-              className="max-h-[10rem] sm:max-w-[20rem] sm:max-h-[15rem]"
+              className="max-h-[20rem] sm:max-w-[40rem] sm:max-h-[35rem]"
             />
           </div>
         </div>
+
         <Button
           size="xl"
           onClick={() => navigate("/test")}
-          className="bg-white px-6 py-8 font-semibold text-xl border-0 rounded-lg hover:bg-black hover:text-white"
+          className="bg-white !px-6 !py-8 font-semibold text-xl border-0 rounded-lg hover:bg-blue-500 hover:text-black"
         >
           Apply Now
         </Button>
