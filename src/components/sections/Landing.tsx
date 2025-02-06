@@ -10,7 +10,7 @@ const LandingSection = () => {
   return (
     <div
       id="home"
-      className="home-section bg-blue-800 text-white h-[100vh] flex flex-col items-center justify-center bg-circle"
+      className="home-section bg-[#004aad] text-white h-[100vh] flex flex-col items-center justify-center bg-circle"
     >
       <motion.div
         initial={{ opacity: 0, y: 50 }}
