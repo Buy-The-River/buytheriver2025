@@ -9,7 +9,7 @@ import { Theme } from "@chakra-ui/react";
 
 function NavBar() {
   return (
-    <div className="bg-[#004aad] sticky top-0 z-50 w-full py-4 px-6 border-b-2 border-white flex justify-between items-center">
+    <div className="bg-[#004aad] sticky top-0 z-50 w-full py-4 px-6 border-b-2 border-white shadow-md flex justify-between items-center">
       {/* Logo */}
       <div className="logo-div !p-2">
         <a href="/">
