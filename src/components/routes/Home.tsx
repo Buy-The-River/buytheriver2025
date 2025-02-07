@@ -5,6 +5,7 @@ import AboutSection from "../sections/About";
 import OfferSection from "../sections/Offer";
 import SponsorsSection from "../sections/Sponsors";
 import ContactSection from "../sections/Contact";
+import Map from "../sections/Map";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <OfferSection />
       <SponsorsSection />
       <ContactSection />
+      <Map />
       <Footer />
     </>
   );
