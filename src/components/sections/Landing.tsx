@@ -1,12 +1,9 @@
 import { motion } from "framer-motion";
 import { Button } from "@chakra-ui/react";
-import { useNavigate } from "react-router-dom";
 import LogoText from "../../../src/assets/Logotxt.svg";
 import Logo from "../../../src/assets/Logo.svg";
 
 const LandingSection = () => {
-  const navigate = useNavigate();
-
   return (
     <div
       id="home"
@@ -37,9 +34,10 @@ const LandingSection = () => {
         </div>
 
         <Button
-          size="xl"
-          onClick={() => navigate("/test")}
-          className="bg-white !px-6 !py-8 font-semibold text-xl border-0 rounded-lg hover:bg-blue-500 hover:text-black"
+          size="lg"
+          onClick={() => (window.location.href = "/")}
+          variant="solid"
+          className="bg-black px-6 py-3 font-semibold text-lg border-0 rounded-lg transition-all duration-300 hover:bg-[#f8cf40]! hover:text-black!"
         >
           Apply Now
         </Button>
