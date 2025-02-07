@@ -46,7 +46,7 @@ const ContactSection = () => {
       id="contact"
       className="contact-section bg-[#004aad] text-center flex flex-col items-center justify-center py-12 px-6"
     >
-      <div className="text-white flex flex-col md:flex-row items-center justify-center w-full max-w-4xl !mt-10 md:!mt-0 gap-8">
+      <div className="!text-white flex flex-col md:flex-row items-center justify-center w-full max-w-4xl !mt-10 md:!mt-0 gap-8">
         {/* Left Column - Contact Info */}
         <div className="w-full md:w-1/2 text-center md:text-left">
           <h3 className="mb-4 text-4xl md:text-5xl mt-6 font-semibold">
@@ -124,7 +124,7 @@ const ContactSection = () => {
             <Button
               type="submit"
               size="xl"
-              className="bg-black px-6 py-3 font-semibold text-lg border-0 rounded-lg transition-all duration-300 hover:bg-[#f8cf40]! hover:text-black!"
+              className="bg-black !px-6 !py-3 font-semibold text-lg border-0 rounded-lg transition-all duration-300 hover:bg-[#f8cf40]! hover:text-black!"
             >
               Send Message
             </Button>

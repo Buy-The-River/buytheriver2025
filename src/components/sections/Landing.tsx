@@ -7,7 +7,7 @@ const LandingSection = () => {
   return (
     <div
       id="home"
-      className="home-section bg-[#004aad] text-white h-[100vh] flex flex-col items-center justify-center bg-circle"
+      className="home-section bg-[#004aad] !text-white h-[100vh] flex flex-col items-center justify-center bg-circle"
     >
       <motion.div
         initial={{ opacity: 0, y: 50 }}
@@ -37,7 +37,7 @@ const LandingSection = () => {
           size="lg"
           onClick={() => (window.location.href = "/")}
           variant="solid"
-          className="bg-black px-6 py-3 font-semibold text-lg border-0 rounded-lg transition-all duration-300 hover:bg-[#f8cf40]! hover:text-black!"
+          className="bg-black !px-6 !py-3 font-semibold text-lg border-0 rounded-lg transition-all duration-300 hover:bg-[#f8cf40]! hover:text-black!"
         >
           Apply Now
         </Button>

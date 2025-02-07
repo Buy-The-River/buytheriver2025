@@ -18,7 +18,7 @@ function NavBar() {
       </div>
 
       {/* Full Menu (Desktop) */}
-      <div className="hidden md:flex items-center gap-8 text-white text-lg !mx-4">
+      <div className="hidden md:flex items-center gap-8 !text-white text-lg !mx-4">
         <div className="flex gap-6">
           <Link
             to="home"
@@ -81,7 +81,7 @@ function NavBar() {
           size="lg"
           onClick={() => (window.location.href = "/")}
           variant="solid"
-          className="bg-black px-6 py-3 font-semibold text-lg border-0 rounded-lg transition-all duration-300 hover:bg-[#f8cf40]! hover:text-black!"
+          className="bg-black !px-6 !py-3 font-semibold text-lg border-0 rounded-lg transition-all duration-300 hover:bg-[#f8cf40]! hover:text-black!"
         >
           Apply Now
         </Button>
@@ -108,7 +108,7 @@ function NavBar() {
             {/* Menu Content */}
             <MenuContent>
               <Theme appearance="light">
-                <MenuItem asChild value="Home" className="px-4 py-4 text-lg">
+                <MenuItem asChild value="Home" className="!p-1.5 text-lg">
                   <Link
                     to="home"
                     smooth={true}
@@ -121,7 +121,7 @@ function NavBar() {
                 <MenuItem
                   asChild
                   value="Find Products"
-                  className="px-4 py-4 text-lg"
+                  className="!p-1.5 text-lg"
                 >
                   <Link
                     to="about"
@@ -135,7 +135,7 @@ function NavBar() {
                 <MenuItem
                   asChild
                   value="What We Offer"
-                  className="px-4 py-4 text-lg"
+                  className="!p-1.5 text-lg"
                 >
                   <Link
                     to="offer"
@@ -146,11 +146,7 @@ function NavBar() {
                     What We Offer
                   </Link>
                 </MenuItem>
-                <MenuItem
-                  asChild
-                  value="Sponsors"
-                  className="px-4 py-4 text-lg"
-                >
+                <MenuItem asChild value="Sponsors" className="!p-1.5 text-lg">
                   <Link
                     to="sponsors"
                     smooth={true}
@@ -160,11 +156,7 @@ function NavBar() {
                     Sponsors
                   </Link>
                 </MenuItem>
-                <MenuItem
-                  asChild
-                  value="Contact Us"
-                  className="px-4 py-4 text-lg"
-                >
+                <MenuItem asChild value="Contact Us" className="!p-1.5 text-lg">
                   <Link
                     to="contact"
                     smooth={true}
@@ -174,11 +166,7 @@ function NavBar() {
                     Contact Us
                   </Link>
                 </MenuItem>
-                <MenuItem
-                  asChild
-                  value="Apply Now"
-                  className="px-4 py-4 text-lg"
-                >
+                <MenuItem asChild value="Apply Now" className="!p-1.5 text-lg">
                   <a href="/" className="hover:text-[#FFDE59]">
                     Apply Now
                   </a>

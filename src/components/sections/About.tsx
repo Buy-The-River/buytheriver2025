@@ -10,8 +10,8 @@ const AboutSection = () => {
       </div>
       <div className="text-[#004aad] h-[70%] flex flex-col sm:justify-center text-left pb-8 sm:w-[60%] text-xl px-6">
         <div className="!my-2">
-          <h3 className="!my-4 !text-2xl font-semibold">Our Story</h3>
-          <p className="pt-4 leading-6">
+          <h3 className=" !my-4 !text-2xl font-semibold">Our Story</h3>
+          <p className=" pt-4 leading-6">
             Buy the River is Trent University’s first-of-its-kind finance case
             competition, bringing together 100+ students and 20+ industry
             professionals. This event marks the beginning of what promises to be
