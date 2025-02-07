@@ -1,7 +1,7 @@
 const Map = () => {
   return (
     <>
-      <div style={{ width: "100%" }}>
+      <div id="map" style={{ width: "100%" }}>
         <iframe
           width="100%"
           height="600"

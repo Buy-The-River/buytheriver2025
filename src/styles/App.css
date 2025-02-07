@@ -10,3 +10,52 @@ h1, h2, h3, h4, h5, h6{
 p, a, span, li, input, button, label{
     font-family: 'Inter', sans-serif;
 }
+
+/* Landing page */
+/* Base styles for the home section */
+.home-section p {
+    font-size: 0.8rem; /* Default font size for small screens */
+    margin: 0.5rem 0; /* Consistent spacing */
+  }
+  
+  /* Adjustments for very small screens (up to 360px) */
+  @media (max-width: 360px) {
+    .home-section p {
+      font-size: 0.6rem; /* Smaller font size for very small screens */
+    }
+    .home-section img {
+      max-width: 5rem; /* Smaller logos for very small screens */
+    }
+    .home-section button {
+      font-size: 0.7rem; /* Smaller button text */
+      padding: 0.25rem 0.5rem; /* Smaller button padding */
+    }
+  }
+  
+  /* Adjustments for medium-small screens (361px to 525px) */
+  @media (min-width: 361px) and (max-width: 525px) {
+    .home-section p {
+      font-size: 0.7rem; /* Slightly larger font size */
+    }
+    .home-section img {
+      max-width: 6rem; /* Slightly larger logos */
+    }
+    .home-section button {
+      font-size: 0.8rem; /* Slightly larger button text */
+      padding: 0.3rem 0.6rem; /* Slightly larger button padding */
+    }
+  }
+  
+  /* Adjustments for larger screens (526px and above) */
+  @media (min-width: 526px) {
+    .home-section p {
+      font-size: 1rem; /* Default font size for larger screens */
+    }
+    .home-section img {
+      max-width: 8rem; /* Default logo size for larger screens */
+    }
+    .home-section button {
+      font-size: 1rem; /* Default button text size */
+      padding: 0.5rem 1rem; /* Default button padding */
+    }
+  }

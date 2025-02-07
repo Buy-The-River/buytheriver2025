@@ -18,16 +18,17 @@ function NavBar() {
       </div>
 
       {/* Full Menu (Desktop) */}
-      <div className="hidden md:flex items-center gap-8 !text-white text-lg !mx-4">
+      {/* Full Menu (Desktop) */}
+      <div className="hidden md:flex items-center gap-8 !text-white !mx-4">
         <div className="flex gap-6">
           <Link
             to="home"
             smooth={true}
             duration={500}
             className="relative text-white transition-all duration-300 cursor-pointer 
-               after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 
-               after:h-[2px] after:bg-[#f8cf40] after:transition-all after:duration-300 
-               hover:text-[#f8cf40]! hover:after:w-full !pb-0.5"
+             after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 
+             after:h-[2px] after:bg-[#f8cf40] after:transition-all after:duration-300 
+             hover:text-[#f8cf40]! hover:after:w-full !pb-0.5 !text-sm"
           >
             Home
           </Link>
@@ -36,9 +37,9 @@ function NavBar() {
             smooth={true}
             duration={500}
             className="relative text-white transition-all duration-300 cursor-pointer 
-               after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 
-               after:h-[2px] after:bg-[#f8cf40] after:transition-all after:duration-300 
-               hover:text-[#f8cf40]! hover:after:w-full !pb-0.5"
+             after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 
+             after:h-[2px] after:bg-[#f8cf40] after:transition-all after:duration-300 
+             hover:text-[#f8cf40]! hover:after:w-full !pb-0.5 !text-sm"
           >
             About Us
           </Link>
@@ -47,9 +48,9 @@ function NavBar() {
             smooth={true}
             duration={500}
             className="relative text-white transition-all duration-300 cursor-pointer 
-               after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 
-               after:h-[2px] after:bg-[#f8cf40] after:transition-all after:duration-300 
-               hover:text-[#f8cf40]! hover:after:w-full !pb-0.5"
+             after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 
+             after:h-[2px] after:bg-[#f8cf40] after:transition-all after:duration-300 
+             hover:text-[#f8cf40]! hover:after:w-full !pb-0.5 !text-sm"
           >
             What We Offer
           </Link>
@@ -58,9 +59,9 @@ function NavBar() {
             smooth={true}
             duration={500}
             className="relative text-white transition-all duration-300 cursor-pointer 
-               after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 
-               after:h-[2px] after:bg-[#f8cf40] after:transition-all after:duration-300 
-               hover:text-[#f8cf40]! hover:after:w-full !pb-0.5"
+             after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 
+             after:h-[2px] after:bg-[#f8cf40] after:transition-all after:duration-300 
+             hover:text-[#f8cf40]! hover:after:w-full !pb-0.5 !text-sm"
           >
             Sponsors
           </Link>
@@ -69,11 +70,22 @@ function NavBar() {
             smooth={true}
             duration={500}
             className="relative text-white transition-all duration-300 cursor-pointer 
-               after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 
-               after:h-[2px] after:bg-[#f8cf40] after:transition-all after:duration-300 
-               hover:text-[#f8cf40]! hover:after:w-full !pb-0.5"
+             after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 
+             after:h-[2px] after:bg-[#f8cf40] after:transition-all after:duration-300 
+             hover:text-[#f8cf40]! hover:after:w-full !pb-0.5 !text-sm"
           >
             Contact Us
+          </Link>
+          <Link
+            to="map"
+            smooth={true}
+            duration={500}
+            className="relative text-white transition-all duration-300 cursor-pointer 
+             after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 
+             after:h-[2px] after:bg-[#f8cf40] after:transition-all after:duration-300 
+             hover:text-[#f8cf40]! hover:after:w-full !pb-0.5 !text-sm"
+          >
+            Map
           </Link>
         </div>
 
@@ -81,7 +93,7 @@ function NavBar() {
           size="lg"
           onClick={() => (window.location.href = "/")}
           variant="solid"
-          className="bg-black !px-6 !py-3 font-semibold text-lg border-0 rounded-lg transition-all duration-300 hover:bg-[#f8cf40]! hover:text-black!"
+          className="bg-black !px-6 !py-3 font-semibold border-0 rounded-lg transition-all duration-300 hover:bg-[#f8cf40]! hover:text-black! !text-sm"
         >
           Apply Now
         </Button>
@@ -118,11 +130,7 @@ function NavBar() {
                     Home
                   </Link>
                 </MenuItem>
-                <MenuItem
-                  asChild
-                  value="Find Products"
-                  className="!p-1.5 text-lg"
-                >
+                <MenuItem asChild value="About Us" className="!p-1.5 text-lg">
                   <Link
                     to="about"
                     smooth={true}
@@ -164,6 +172,16 @@ function NavBar() {
                     className="hover:text-[#FFDE59] cursor-pointer"
                   >
                     Contact Us
+                  </Link>
+                </MenuItem>
+                <MenuItem asChild value="Map" className="!p-1.5 text-lg">
+                  <Link
+                    to="map"
+                    smooth={true}
+                    duration={500}
+                    className="hover:text-[#FFDE59] cursor-pointer"
+                  >
+                    Map
                   </Link>
                 </MenuItem>
                 <MenuItem asChild value="Apply Now" className="!p-1.5 text-lg">

@@ -20,7 +20,9 @@ function Footer() {
         </li>
       </ul>
 
-      <p>Made with 💖 in Peterborough, Ontario by the Buy The River team!</p>
+      <p className="text-center">
+        Made with 💖 in Peterborough, Ontario by the Buy The River Team
+      </p>
     </div>
   );
 }
