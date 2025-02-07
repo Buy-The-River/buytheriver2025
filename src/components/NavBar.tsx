@@ -9,59 +9,82 @@ import { Theme } from "@chakra-ui/react";
 
 function NavBar() {
   return (
-    <div className="bg-[#004aad] sticky top-0 z-50 w-full py-4 px-6 border-b-2 border-white shadow-md flex justify-between items-center">
+    <div className="bg-[#004aad] sticky top-0 z-50 w-full !py-2 border-b-2 border-white shadow-md flex justify-between items-center">
       {/* Logo */}
-      <div className="logo-div !p-2">
+      <div className="logo-div !p-2 !px-3">
         <a href="/">
           <img src={Logo_png} alt="logo" className=" max-h-12 sm:max-h-16" />
         </a>
       </div>
 
       {/* Full Menu (Desktop) */}
-      <div className="hidden md:flex gap-6 text-white text-lg !p-3">
-        <Link
-          to="home"
-          smooth={true}
-          duration={500}
-          className="hover:text-[#FFDE59] cursor-pointer"
+      <div className="hidden md:flex items-center gap-8 text-white text-lg !mx-4">
+        <div className="flex gap-6">
+          <Link
+            to="home"
+            smooth={true}
+            duration={500}
+            className="relative text-white transition-all duration-300 cursor-pointer 
+               after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 
+               after:h-[2px] after:bg-[#f8cf40] after:transition-all after:duration-300 
+               hover:text-[#f8cf40]! hover:after:w-full !pb-0.5"
+          >
+            Home
+          </Link>
+          <Link
+            to="about"
+            smooth={true}
+            duration={500}
+            className="relative text-white transition-all duration-300 cursor-pointer 
+               after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 
+               after:h-[2px] after:bg-[#f8cf40] after:transition-all after:duration-300 
+               hover:text-[#f8cf40]! hover:after:w-full !pb-0.5"
+          >
+            About Us
+          </Link>
+          <Link
+            to="offer"
+            smooth={true}
+            duration={500}
+            className="relative text-white transition-all duration-300 cursor-pointer 
+               after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 
+               after:h-[2px] after:bg-[#f8cf40] after:transition-all after:duration-300 
+               hover:text-[#f8cf40]! hover:after:w-full !pb-0.5"
+          >
+            What We Offer
+          </Link>
+          <Link
+            to="sponsors"
+            smooth={true}
+            duration={500}
+            className="relative text-white transition-all duration-300 cursor-pointer 
+               after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 
+               after:h-[2px] after:bg-[#f8cf40] after:transition-all after:duration-300 
+               hover:text-[#f8cf40]! hover:after:w-full !pb-0.5"
+          >
+            Sponsors
+          </Link>
+          <Link
+            to="contact"
+            smooth={true}
+            duration={500}
+            className="relative text-white transition-all duration-300 cursor-pointer 
+               after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 
+               after:h-[2px] after:bg-[#f8cf40] after:transition-all after:duration-300 
+               hover:text-[#f8cf40]! hover:after:w-full !pb-0.5"
+          >
+            Contact Us
+          </Link>
+        </div>
+
+        <Button
+          size="lg"
+          onClick={() => (window.location.href = "/")}
+          variant="solid"
+          className="bg-black px-6 py-3 font-semibold text-lg border-0 rounded-lg transition-all duration-300 hover:bg-[#f8cf40]! hover:text-black!"
         >
-          Home
-        </Link>
-        <Link
-          to="about"
-          smooth={true}
-          duration={500}
-          className="hover:text-[#FFDE59] cursor-pointer"
-        >
-          About Us
-        </Link>
-        <Link
-          to="offer"
-          smooth={true}
-          duration={500}
-          className="hover:text-[#FFDE59] cursor-pointer"
-        >
-          What We Offer
-        </Link>
-        <Link
-          to="sponsors"
-          smooth={true}
-          duration={500}
-          className="hover:text-[#FFDE59] cursor-pointer"
-        >
-          Sponsors
-        </Link>
-        <Link
-          to="contact"
-          smooth={true}
-          duration={500}
-          className="hover:text-[#FFDE59] cursor-pointer"
-        >
-          Contact Us
-        </Link>
-        <a href="/" className="hover:text-[#FFDE59]">
           Apply Now
-        </a>
+        </Button>
       </div>
 
       {/* Hamburger Menu (Mobile) */}
