@@ -7,32 +7,32 @@ const LandingSection = () => {
   return (
     <div
       id="home"
-      className="home-section h-[100vh] bg-[#004aad] !text-white !pt-10 !pb-20 flex flex-col items-center justify-center "
+      className="home-section h-[100vh] bg-[#004aad] text-white flex flex-col items-center justify-center"
     >
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, ease: "easeOut" }}
-        className="flex flex-col items-center text-center"
+        className="flex flex-col items-center text-center w-[80vw]"
       >
         {/* Responsive Text */}
-        <div className="text-center">
-          <p className="!my-2 !font-bold whitespace-nowrap">
-            In-Person | 100+ Participants | March 1st, 2025
+        <div className="w-full flex justify-center">
+          <p className="text-white! font-bold! !mb-3 text-center text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">
+            In-Person • 100+ Participants • March 1st, 2025
           </p>
         </div>
 
         {/* Responsive Logo Container */}
-        <div className="!mt-3 flex flex-row justify-center items-center w-full">
+        <div className="mt-4 flex flex-row justify-center items-center w-full">
           <img
             src={Logo}
             alt="logo"
-            className="!mx-3 w-1/2 max-w-[6rem] sm:max-w-[8rem] md:max-w-[12rem] lg:max-w-[16rem] xl:max-w-[20rem]"
+            className="!mx-3 w-[30%] max-w-[5rem] sm:max-w-[7rem] md:max-w-[10rem] lg:max-w-[12rem] xl:max-w-[16rem]"
           />
           <img
             src={LogoText}
             alt="logo"
-            className="w-1/2 max-w-[3rem] sm:max-w-[4rem] md:max-w-[6rem] lg:max-w-[8rem] xl:max-w-[10rem]"
+            className="!mx-3 w-[30%] max-w-[2rem] sm:max-w-[4rem] md:max-w-[6rem] lg:max-w-[8rem] xl:max-w-[10rem]"
           />
         </div>
 
@@ -41,7 +41,7 @@ const LandingSection = () => {
           size="lg"
           onClick={() => (window.location.href = "/")}
           variant="solid"
-          className="bg-black !px-4 !py-2 font-semibold text-xs sm:text-sm border-0 rounded-lg transition-all duration-300 hover:bg-[#f8cf40]! hover:text-black! !mt-3"
+          className="bg-black text-base !px-8 !py-4 rounded-lg transition-all duration-300 hover:bg-[#f8cf40]! hover:text-black! !mt-4"
         >
           Apply Now
         </Button>
