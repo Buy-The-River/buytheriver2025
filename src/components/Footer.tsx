@@ -21,7 +21,7 @@ function Footer() {
       </ul>
 
       <p className="text-center">
-        Made with 💖 in Peterborough, Ontario by the Buy The River Team
+        Made with 💖 in Peterborough, Ontario by the Buy The River Team!
       </p>
     </div>
   );

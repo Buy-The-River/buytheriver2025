@@ -124,7 +124,7 @@ const ContactSection = () => {
             <Button
               type="submit"
               size="xl"
-              className="bg-black !px-6 !py-3 font-semibold text-lg border-0 rounded-lg transition-all duration-300 hover:bg-[#f8cf40]! hover:text-black!"
+              className="!bg-[#FFDE59] !text-[#004aad] !px-6 !py-3 font-semibold border-0 rounded-lg transition-all duration-300 hover:bg-white! !text-sm"
             >
               Send Message
             </Button>

@@ -41,7 +41,7 @@ const LandingSection = () => {
           size="lg"
           onClick={() => (window.location.href = "/")}
           variant="solid"
-          className="bg-black text-base !px-8 !py-4 rounded-lg transition-all duration-300 hover:bg-[#f8cf40]! hover:text-black! !mt-4"
+          className="!bg-[#FFDE59] !text-[#004aad] !px-6 !py-3 font-semibold border-0 rounded-lg transition-all duration-300 hover:bg-white! !text-sm"
         >
           Apply Now
         </Button>
