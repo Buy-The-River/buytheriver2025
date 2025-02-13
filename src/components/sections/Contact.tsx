@@ -33,6 +33,7 @@ const ContactSection = () => {
           () => {
             console.log("SUCCESS!");
             setSubmitted(true);
+            setFormData({ name: "", email: "", message: "" });
           },
           (error) => {
             console.log("FAILED...", error.text);
@@ -44,20 +45,24 @@ const ContactSection = () => {
   return (
     <div
       id="contact"
-      className="contact-section bg-[#004aad] text-center flex flex-col items-center justify-center py-12 px-6"
+      className="text-left contact-section bg-[#004aad] flex flex-col items-center !p-20"
     >
-      <div className="!text-white flex flex-col md:flex-row items-center justify-center w-full max-w-4xl !mt-10 md:!mt-0 gap-8">
+      <div className="!text-white flex flex-col md:flex-row items-start justify-center w-full max-w-4xl md:!mt-0 gap-8">
         {/* Left Column - Contact Info */}
-        <div className="w-full md:w-1/2 text-center md:text-left">
-          <h3 className="mb-4 text-4xl md:text-5xl mt-6 font-semibold">
+        <div className="!mt-15 w-full md:w-1/2 md:text-left">
+          <h2 className="!mb-4 !text-4xl !md:text-5xl !mt-6 font-semibold">
             Contact Us
-          </h3>
-          <p className="text-base md:text-lg">
-            Our Address: 1600 W Bank Dr, Peterborough, ON K9L 0G2
-          </p>
-          <p className="text-base md:text-lg">
-            Email: buytheriver2025@gmail.com
-          </p>
+          </h2>
+          <div className="text-left !py-4">
+            <p className="!text-[#FFDE59] text-base md:text-lg">Our Address:</p>{" "}
+            <p className="text-base md:text-lg">
+              1600 W Bank Dr, Peterborough, ON K9L 0G2
+            </p>
+          </div>
+          <div className="text-left !py-4">
+            <p className="!text-[#FFDE59] text-base md:text-lg">Email:</p>
+            <p className="text-base md:text-lg">buytheriver2025@gmail.com</p>
+          </div>
         </div>
 
         {/* Right Column - Contact Form */}
@@ -130,8 +135,8 @@ const ContactSection = () => {
             </Button>
 
             {submitted && (
-              <div className="text-green-500 text-lg font-semibold text-center mt-4">
-                Thank you for your message!
+              <div className="!bg-green-500 !text-white text-lg !font-bold text-center !p-3 !rounded-md shadow-md !mt-4 transition-opacity duration-500 animate-fade-in">
+                <p>✅ Message sent successfully!</p>
               </div>
             )}
           </form>
