@@ -20,7 +20,7 @@ function Footer() {
         </li>
       </ul>
 
-      <p className="text-center">
+      <p className="!leading-6 !mx-3 text-center">
         Made with 💖 in Peterborough, Ontario by the Buy The River Team!
       </p>
     </div>
