@@ -23,16 +23,16 @@ const LandingSection = () => {
         </div>
 
         {/* Responsive Logo Container */}
-        <div className="mt-4 flex flex-row justify-center items-center w-full">
+        <div className="flex flex-row justify-center items-center w-full">
           <img
             src={Logo}
             alt="logo"
-            className="w-[30%] h-auto max-w-[5rem] sm:max-w-[7rem] md:max-w-[10rem] lg:max-w-[12rem]"
+            className="w-[30%] h-auto max-w-[5rem] sm:max-w-[7rem] md:w-[25%]"
           />
           <img
             src={LogoText}
             alt="logo"
-            className="w-[30%] h-auto max-w-[2rem] sm:max-w-[4rem] md:max-w-[6rem] lg:max-w-[8rem]"
+            className="w-[30%] h-auto max-w-[2rem] sm:max-w-[4rem] md:w-[25%]"
           />
         </div>
 
