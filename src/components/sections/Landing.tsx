@@ -7,7 +7,7 @@ const LandingSection = () => {
   return (
     <div
       id="home"
-      className="home-section h-[100vh] bg-[#004aad] text-white flex flex-col items-center justify-center"
+      className="home-section min-h-[100vh] bg-[#004aad] text-white flex flex-col items-center justify-center !pb-20"
     >
       <motion.div
         initial={{ opacity: 0, y: 50 }}
@@ -17,8 +17,8 @@ const LandingSection = () => {
       >
         {/* Responsive Text */}
         <div className="w-full flex justify-center">
-          <p className="text-white! font-bold! !mb-3 text-center text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">
-            In-Person • 100+ Participants • March 1st, 2025
+          <p className="text-white! font-bold! !my-8 text-center text-base sm:text-lg! md:text-xl! lg:text-2xl! xl:text-3xl! 2xl:text-4xl!">
+            In-Person | 100+ Participants | March 1st, 2025
           </p>
         </div>
 
@@ -27,12 +27,12 @@ const LandingSection = () => {
           <img
             src={Logo}
             alt="logo"
-            className="!mx-3 w-[30%] max-w-[5rem] sm:max-w-[7rem] md:max-w-[10rem] lg:max-w-[12rem] xl:max-w-[16rem]"
+            className="w-[30%] h-auto max-w-[5rem] sm:max-w-[7rem] md:max-w-[10rem] lg:max-w-[12rem]"
           />
           <img
             src={LogoText}
             alt="logo"
-            className="!mx-3 w-[30%] max-w-[2rem] sm:max-w-[4rem] md:max-w-[6rem] lg:max-w-[8rem] xl:max-w-[10rem]"
+            className="w-[30%] h-auto max-w-[2rem] sm:max-w-[4rem] md:max-w-[6rem] lg:max-w-[8rem]"
           />
         </div>
 
@@ -41,7 +41,7 @@ const LandingSection = () => {
           size="lg"
           onClick={() => (window.location.href = "/")}
           variant="solid"
-          className="!bg-[#FFDE59] !text-[#004aad] !px-6 !py-3 font-semibold border-0 rounded-lg transition-all duration-300 hover:bg-white! !text-sm"
+          className="!bg-[#FFDE59] !text-[#004aad] !px-6 !py-3 lg:py-10! !my-5 text-center text-base sm:text-lg! md:text-xl! lg:text-2xl! xl:text-3xl! 2xl:text-4xl! font-semibold border-0 rounded-lg transition-all duration-300 hover:bg-white! !text-sm"
         >
           Apply Now
         </Button>
