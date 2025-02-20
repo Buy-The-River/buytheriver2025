@@ -39,7 +39,9 @@ const LandingSection = () => {
         {/* Responsive Button */}
         <Button
           size="lg"
-          onClick={() => (window.location.href = "/")}
+          onClick={() =>
+            (window.location.href = "https://forms.office.com/r/1zEKdjMXqc")
+          }
           variant="solid"
           className="!bg-[#FFDE59] !text-[#004aad] !px-6 !py-3 lg:py-10! !my-5 text-center text-base sm:text-lg! md:text-xl! lg:text-2xl! xl:text-3xl! 2xl:text-4xl! font-semibold border-0 rounded-lg transition-all duration-300 hover:bg-white! !text-sm"
         >

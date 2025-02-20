@@ -91,7 +91,9 @@ function NavBar() {
 
         <Button
           size="lg"
-          onClick={() => (window.location.href = "/")}
+          onClick={() =>
+            (window.location.href = "https://forms.office.com/r/1zEKdjMXqc ")
+          }
           variant="solid"
           className="!bg-[#FFDE59] !text-[#004aad] !px-6 !py-3 font-semibold border-0 rounded-lg transition-all duration-300 hover:bg-white! !text-sm"
         >
@@ -185,7 +187,10 @@ function NavBar() {
                   </Link>
                 </MenuItem>
                 <MenuItem asChild value="Apply Now" className="!p-1.5 text-lg">
-                  <a href="/" className="hover:text-[#FFDE59]">
+                  <a
+                    href="https://forms.office.com/r/1zEKdjMXqc"
+                    className="hover:text-[#FFDE59]"
+                  >
                     Apply Now
                   </a>
                 </MenuItem>
