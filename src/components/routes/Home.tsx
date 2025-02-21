@@ -6,6 +6,8 @@ import OfferSection from "../sections/Offer";
 import SponsorsSection from "../sections/Sponsors";
 import ContactSection from "../sections/Contact";
 import Map from "../sections/Map";
+import OtherSection from "../sections/Other";
+import CaseSection from "../sections/Case";
 
 const Home = () => {
   return (
@@ -14,6 +16,8 @@ const Home = () => {
       <LandingSection />
       <AboutSection />
       <OfferSection />
+      {/* <OtherSection /> */}
+      <CaseSection />
       <SponsorsSection />
       <ContactSection />
       <Map />

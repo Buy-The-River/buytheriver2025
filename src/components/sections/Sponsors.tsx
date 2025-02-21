@@ -20,7 +20,7 @@ const SponsorsSection = () => {
         });
       },
       {
-        threshold: 0.5, // Adjust this value for mobile/desktop sensitivity
+        threshold: 0.5,
       }
     );
 
@@ -42,30 +42,41 @@ const SponsorsSection = () => {
       className={`sponsor-section min-h-[50vh] text-black !text-[#004aad] !leading-18
                  !border-t-10 !border-[#004aad] !p-10 text-center !text-6xl transition-colors duration-300 ${whiteBgClass}`}
     >
-      <h2>Our Sponsors</h2>
-      <div className="flex flex-wrap justify-center !gap-8 !m-15">
-        <img
-          src={Chatime}
-          alt="Chatime Logo"
-          className="!h-50 w-auto object-contain"
-        />
-        <img
-          src={Osmows}
-          alt="Osmow's Logo"
-          className="!h-50 w-auto object-contain"
-        />
-        <img
-          src={Pj}
-          alt="Pitch Jams Logo"
-          className="!h-50 w-auto object-contain"
-        />
-        <img
-          src={Business}
-          alt="School of Business Logo"
-          className="!h-24 w-auto object-contain !m-auto"
-        />
+      <h2 className="!text-6xl !mb-6 text-3xl font-bold">Our Sponsors</h2>
+
+      {/* Centered Sponsors Section */}
+      <div className="flex flex-wrap justify-center items-center gap-8">
+        <div className="flex justify-center items-center">
+          <img
+            src={Chatime}
+            alt="Chatime Logo"
+            className="!h-24 !w-auto object-contain"
+          />
+        </div>
+        <div className="flex justify-center items-center">
+          <img
+            src={Osmows}
+            alt="Osmow's Logo"
+            className="!h-24 !w-auto object-contain"
+          />
+        </div>
+        <div className="flex justify-center items-center">
+          <img
+            src={Pj}
+            alt="Pitch Jams Logo"
+            className="!h-24 !w-auto object-contain"
+          />
+        </div>
+        <div className="flex justify-center items-center">
+          <img
+            src={Business}
+            alt="School of Business Logo"
+            className="h-24 w-auto object-contain"
+          />
+        </div>
       </div>
-      <p className="!text-base !font-bold !mt-10">
+
+      <p className="!text-base font-bold !mt-10">
         More Sponsors for Buy the River 2025 Coming Soon...
       </p>
     </div>

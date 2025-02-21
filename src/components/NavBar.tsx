@@ -19,7 +19,7 @@ function NavBar() {
 
       {/* Full Menu (Desktop) */}
       {/* Full Menu (Desktop) */}
-      <div className="hidden md:flex items-center gap-8 !text-white !mx-4">
+      <div className="hidden lg:flex items-center gap-8 !text-white !mx-4">
         <div className="flex gap-6">
           <Link
             to="home"
@@ -53,6 +53,17 @@ function NavBar() {
              hover:text-[#f8cf40]! hover:after:w-full !pb-0.5 !text-sm"
           >
             What We Offer
+          </Link>
+          <Link
+            to="case"
+            smooth={true}
+            duration={500}
+            className="relative text-white transition-all duration-300 cursor-pointer 
+             after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 
+             after:h-[2px] after:bg-[#f8cf40] after:transition-all after:duration-300 
+             hover:text-[#f8cf40]! hover:after:w-full !pb-0.5 !text-sm"
+          >
+            Case
           </Link>
           <Link
             to="sponsors"
@@ -102,7 +113,7 @@ function NavBar() {
       </div>
 
       {/* Hamburger Menu (Mobile) */}
-      <div className="headings nav-heading bg-black md:hidden">
+      <div className="headings nav-heading bg-black lg:hidden">
         <div className="menu  bg-[#004aad] ">
           {/* The whole menu component */}
           <MenuRoot>
@@ -154,6 +165,16 @@ function NavBar() {
                     className="hover:text-[#FFDE59] cursor-pointer"
                   >
                     What We Offer
+                  </Link>
+                </MenuItem>
+                <MenuItem asChild value="Case" className="!p-1.5 text-lg">
+                  <Link
+                    to="case"
+                    smooth={true}
+                    duration={500}
+                    className="hover:text-[#FFDE59] cursor-pointer"
+                  >
+                    Case
                   </Link>
                 </MenuItem>
                 <MenuItem asChild value="Sponsors" className="!p-1.5 text-lg">
