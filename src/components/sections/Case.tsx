@@ -62,8 +62,8 @@ const CaseSection = () => {
 
       {/* Always Visible Download Buttons (Side by Side on Desktop, Stacked on Mobile) */}
       <div
-        className={`mt-6 ${
-          isMobile ? "!flex !justify-center" : "!grid grid-cols-2 !gap-4"
+        className={`mt-6 flex flex-col ${
+          isMobile ? "gap-2" : "md:grid md:grid-cols-2 md:gap-4"
         }`}
       >
         {/* PDF Download Button */}
@@ -79,7 +79,7 @@ const CaseSection = () => {
         </a>
 
         {/* Excel Download Button */}
-        <a href="/assets/case_figures_BTR2025.xlsx" download>
+        <a href="/case_figures_BTR2025.xlsx" download>
           <Button
             size="lg"
             variant="solid"
