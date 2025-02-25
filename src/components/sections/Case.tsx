@@ -29,7 +29,7 @@ const CaseSection = () => {
     <div
       id="case"
       className="sponsor-section min-h-[50vh] text-black !text-white !bg-[#004aad] !leading-18
-                 !p-10 text-center !text-6xl transition-colors duration-300"
+                 !p-20 text-center !text-6xl transition-colors duration-300"
     >
       <h3 className="!m-2 text-lg font-semibold md:col-span-3">The Case</h3>
 
